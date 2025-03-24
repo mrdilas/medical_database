@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --font: "Roboto", serif;
+
+  --accent: #12C0DD;
+  --accent-rgb: 18, 192, 221;
+  --light: #FFFFFF;
+
+  --border-radius: 10px;
+  --width-line: 2px;
+  --tr: .3s;
+}
+
+body {
+  font-family: var(--font);
+  background-color: rgb(163, 158, 162);
+  height: 100%;
+}
+
+body, html {
+  height: 100vh;
+ 
+}
+
+input, button, select {
+  font-family: var(--font);
+}
+
+.form_input {
+  flex-grow: 1;
+  font-size: 20px;
+  border: var(--width-line) solid rgba(var(--accent-rgb), .3);
+  border-radius: var(--border-radius);
+  padding: 10px 15px;
+  box-sizing: border-box;
+  transition: var(--tr);
+}
+
+.form_inpute:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form_btn {
+  flex-basis: 200px;
+  font-size: 20px;
+  background-color: rgba(var(--accent-rgb), .3);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 12px 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: var(--tr);
+}
+
+.form_btn:hover {
+  background-color: var(--accent);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: grid;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.block_1 {
+  width: 100%;
+  height: 30%; 
+  display: flex;  
+  align-items: center;  
+  justify-content: center; 
+  position: relative;  
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+
+}
+
+.block-container {
+  display: flex; /* Горизонтальное расположение блоков */
+  width: 104%; /* Контейнер занимает всю ширину */
+}
+
+.block_2 {
+  width: 60%; /* Занимает 2/3 доступной ширины */
+  margin-right: 50px; /* Отступ справа для разделения блоков */
+  margin-left: 50px;
+  flex-direction: column;  
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+  position: relative; 
+  overflow: hidden;  
+}
+
+.block_3 {
+  width: 20%; 
+  flex-direction: column;
+  display: flex; 
+  overflow: hidden; 
+  background-color: white; 
+  border-radius: var(--border-radius);
+}
+
+.block_4 {
+  width: 20%; 
+  flex-direction: column;
+  display: flex; 
+  overflow: hidden; 
+  background-color: white; 
+  border-radius: var(--border-radius);
+}
+
+.card_patient {
+  width: 98%;
+  padding: 0px 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card_doctor {
+  width: 93%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+  position: relative;
+}
+
+.btn_doctor {
+  flex-basis: 60px;
+  font-size: 20px;
+  background-color: rgba(var(--accent-rgb), .3);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: var(--tr);
+}
+
+.btn_doctor:hover {
+  background-color: var(--accent);
+}
+
+.btn_table {
+  flex-basis: 60px;
+  font-size: 20px;
+  background-color: rgba(var(--accent-rgb), .3);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: var(--tr);
+}
+
+.btn_table:hover {
+  background-color: var(--accent);
+}
+
+.header-container {
+  display: flex;           /* Устанавливает flexbox-контейнер */
+  align-items: center;    /* Вертикальное выравнивание по центру */
+  gap: 20px;              /* Отступ между заголовками */
+}
